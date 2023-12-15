@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="aula07.css">
+
+</head>
+
+<body>
+    <!-- Texto Principal -->
+    <h1>Formulário de Inscrição</h1>
+    <!-- Texto Secundário -->
+    <h2 id="titulo-destaque">Preencha seus dados</h2>
+
+    <!-- A diferença entre um id e uma class é que um id é usado apenas para identificar um unico elemento em nosso HTML. Os identificadores são usados apenas quando um elemento na página precisa ter um estilo específico aplicado a ele. No entanto, uma class pode ser usada para identificar mais de um elemento HTML. -->
+
+    <!-- Tag para iniciar o formulário -->
+    <form id="form-usuario">
+        <!-- Tag para colocar o nome -->
+        <label for="Nome">Nome Completo:</label>
+        <input type="text" required> <br> <br>
+
+        <!-- Todas as vezes que usarmos a class, chamaremos ela com ( . ) ponto no css. E todos as vezes que usarmos ID chamaremos com ( # ) RASH -->
+
+        <!-- Tag para colocar o email -->
+        <label for="Email">Email:</label>
+        <input type="email" required> <br> <br>
+        <!-- Tag para colocar o endereço -->
+        <label for="Endereço">Endereço:</label>
+        <input type="text" required> <br> <br>
+        <!-- Tag para adicionar a Cidade -->
+        <label for="Cidade">Cidade:</label>
+        <input type="text" required> <br> <br>
+        <!-- Tag para adicionar o Telefone e o DDD -->
+        <label for="Telefone">Telefone:</label>
+        <select name="" id="">
+            <option value="21">21</option>
+            <option value="11">11</option>
+            <option value="13">13</option>
+            <option value="77">77</option>
+            <option value="44">44</option>
+            <input type="number" required> <br> <br>
+        </select>
+        <!-- Tag para colocar o Usuário -->
+        <label for="Usuario">Usuário:</label>
+        <input type="text" placeholder="Entre com o seu login" required> <br> <br>
+        <!-- Tag para colocar a Senha -->
+        <label for="Senha">Senha:</label>
+        <input type="password" required> <br> <br>
+        <!-- Tag para colocar os botões -->
+        <div class="botao-box">
+            <input type="submit" value="Finalizar minha Inscrição" >
+            <input type="reset" value="Redefinir">
+        </div>
+    </form>
+
+</body>
+
+</html>
